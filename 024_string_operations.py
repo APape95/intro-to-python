@@ -15,7 +15,7 @@ from lib.helpers import check_that_these_are_equal
 
 # Here's an example:
 
-length = len("Hello!")
+length = len("I'm a string!")
 print(f"The string is {length} characters long")
 
 # @TASK: Try it out yourself by changing the string "Hello!"
@@ -42,7 +42,7 @@ old_string = "Hello, YOUR_NAME!"
 new_string = old_string.replace("YOUR_NAME", "Kay")
 
 # Uncomment this next line to see the result
-# print(new_string)
+print(new_string)
 
 # You'll notice here that the function is coming in a
 # different place. Let's compare `len` and `replace`:
@@ -79,8 +79,8 @@ print("Function: uppercase")
 # Search for 'python make string uppercase'
 
 def make_uppercase(string):
-  # Return the string in uppercase
-  pass
+    new_message = string.upper()
+    return print(new_message)
 
 check_that_these_are_equal(
   make_uppercase("hello"), "HELLO")
