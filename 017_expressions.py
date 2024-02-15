@@ -99,11 +99,9 @@ print(add_one(add_one(add_one(add_one(add_one(add_one(1)))))))
 # @TASK: Play around with building complex expressions in
 # the space below.
 
-print((((add_one(5))*100)/0.343)*3500)
-
 # EXPRESSIONS PLAYGROUND BEGINS
 
-
+print((((add_one(5))*100)/0.343)*3500)
 
 # EXPRESSIONS PLAYGROUND ENDS
 
