@@ -48,10 +48,14 @@ print("Function: add_cats_repeatedly")
 #    add_cats_repeatedly([], 3)
 # => ['cats', 'cats', 'cats']
 
+count = 0
+
 def add_cats_repeatedly(word_list, count):
-  squares = []
-  while count < 3:
-      squares.appen(["cats"])
+ for count in range(0, 3):
+  count = count + 1
+  return (f"{word_list} cats")
+
+
 
 check_that_these_are_equal(
   add_cats_repeatedly([], 3), ['cats', 'cats', 'cats'])
