@@ -29,7 +29,18 @@ from lib.helpers import check_that_these_are_equal
 print("")
 print("Function: report_long_words")
 
+def no_hyphen_list(words):
+    if ("-") not in words:
+       no_hyphen = words
+    return no_hyphen
+
 def report_long_words(words):
+  no_hyphen_list = no_hyphen(words)
+  char_over_15 = char_over(no_hyphen_list)
+  return char_over_15
+
+
+def char_over_15(words):
   pass
 
 check_that_these_are_equal(
