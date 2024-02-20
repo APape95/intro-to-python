@@ -33,14 +33,14 @@ def report_long_words(words):
   long_words = long_enough(words)
   no_special_char = no_chara(long_words)
   final_list = short_words(no_special_char)
-  return final_list
+  return ",".join(final_list)
 
-print(f"These words are quite long: {report_long_words}")
+print(f"These words are quite long:{report_long_words}")
 
 def long_enough(words):
   long_words = []
   for word in words:
-    if len(word)>10:
+    if len(word) > 10:
       long_words.append(word)
   return long_words
 
